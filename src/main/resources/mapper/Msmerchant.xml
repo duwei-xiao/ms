@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.adu.ms.mapper.MsmerchantMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.adu.ms.entity.Msmerchant">
+        <id column="id" property="id" />
+        <result column="merchantname" property="merchantname" />
+        <result column="merchantshopname" property="merchantshopname" />
+        <result column="merchantaccount" property="merchantaccount" />
+        <result column="merchantpassword" property="merchantpassword" />
+        <result column="merchantscope" property="merchantscope" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, merchantname, merchantshopname, merchantaccount, merchantpassword, merchantscope
+    </sql>
+
+</mapper>

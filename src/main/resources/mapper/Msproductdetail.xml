@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.adu.ms.mapper.MsproductdetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.adu.ms.entity.Msproductdetail">
+        <id column="id" property="id" />
+        <result column="productid" property="productid" />
+        <result column="merchantid" property="merchantid" />
+        <result column="productplace" property="productplace" />
+        <result column="productname" property="productname" />
+        <result column="brandname" property="brandname" />
+        <result column="productweight" property="productweight" />
+        <result column="specification" property="specification" />
+        <result column="productdetailpicture" property="productdetailpicture" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, productid, merchantid, productplace, productname, brandname, productweight, specification, productdetailpicture
+    </sql>
+
+</mapper>

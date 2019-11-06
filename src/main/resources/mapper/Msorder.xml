@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.adu.ms.mapper.MsorderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.adu.ms.entity.Msorder">
+        <id column="id" property="id" />
+        <result column="productid" property="productid" />
+        <result column="payamount" property="payamount" />
+        <result column="userid" property="userid" />
+        <result column="merchantid" property="merchantid" />
+        <result column="createtime" property="createtime" />
+        <result column="paytime" property="paytime" />
+        <result column="paystatus" property="paystatus" />
+        <result column="receivingadress" property="receivingadress" />
+        <result column="receivingphone" property="receivingphone" />
+        <result column="receivingname" property="receivingname" />
+        <result column="tradeserialnumber" property="tradeserialnumber" />
+        <result column="num" property="num" />
+        <result column="paytype" property="paytype" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, productid, payamount, userid, merchantid, createtime, paytime, paystatus, receivingadress, receivingphone, receivingname, tradeserialnumber, num, paytype
+    </sql>
+
+</mapper>

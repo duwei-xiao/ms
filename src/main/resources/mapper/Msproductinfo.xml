@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.adu.ms.mapper.MsproductinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.adu.ms.entity.Msproductinfo">
+        <id column="id" property="id" />
+        <result column="productid" property="productid" />
+        <result column="producttitle" property="producttitle" />
+        <result column="productpicture" property="productpicture" />
+        <result column="miaoshaprice" property="miaoshaprice" />
+        <result column="originalprice" property="originalprice" />
+        <result column="msmerchantid" property="msmerchantid" />
+        <result column="applydate" property="applydate" />
+        <result column="auditdate" property="auditdate" />
+        <result column="auditstate" property="auditstate" />
+        <result column="starttime" property="starttime" />
+        <result column="endtime" property="endtime" />
+        <result column="productcount" property="productcount" />
+        <result column="stockcount" property="stockcount" />
+        <result column="description" property="description" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, productid, producttitle, productpicture, miaoshaprice, originalprice, msmerchantid, applydate, auditdate, auditstate, starttime, endtime, productcount, stockcount, description
+    </sql>
+
+</mapper>
